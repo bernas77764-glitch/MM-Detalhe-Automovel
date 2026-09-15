@@ -65,6 +65,22 @@
     });
   }
 
+  /* ---------- Preços ---------- */
+  const prices = $("#prices");
+  if (prices && (cfg.precos || []).length) {
+    $("#precos").hidden = false;
+    $("#precosNota").textContent = cfg.precosNota || "";
+    cfg.precos.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "card price";
+      card.innerHTML = '<div class="price-top"><h3></h3><span class="price-tag"></span></div><p></p><a href="#contactos" class="price-link">Marcar →</a>';
+      card.querySelector("h3").textContent = item.nome;
+      card.querySelector(".price-tag").textContent = item.preco;
+      card.querySelector("p").textContent = item.desc || "";
+      prices.appendChild(card);
+    });
+  }
+
   /* ---------- Dados estruturados (SEO local) ---------- */
   const ld = $("#ld-json");
   if (ld) {
@@ -118,7 +134,7 @@
       },
       { threshold: 0.12 }
     );
-    $$(".card, .step, .gallery-item, .section-head, .about-copy, .about-media, .contact-info, .contact-form").forEach((el) => {
+    $$(".card, .price, .step, .gallery-item, .section-head, .about-copy, .about-media, .contact-info, .contact-form").forEach((el) => {
       el.classList.add("reveal");
       io.observe(el);
     });

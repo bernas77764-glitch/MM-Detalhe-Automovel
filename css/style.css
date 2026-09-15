@@ -34,6 +34,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 body.nav-open { overflow: hidden; }
+[hidden] { display: none !important; }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--red); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -158,6 +159,18 @@ p { margin: 0 0 1em; }
   background: var(--red-soft); margin-bottom: 18px;
 }
 .card-icon svg { width: 28px; height: 28px; fill: var(--red); }
+
+/* ---------- Preços ---------- */
+.prices-grid { grid-template-columns: repeat(3, 1fr); }
+.price { display: flex; flex-direction: column; }
+.price-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+.price-top h3 { margin: 0; }
+.price-tag {
+  flex: none; padding: 6px 14px; border-radius: 999px;
+  background: var(--red); color: #fff; font-weight: 800; font-size: 1.05rem; white-space: nowrap;
+}
+.price p { flex: 1; }
+.price-link { margin-top: 18px; font-weight: 700; font-size: .92rem; }
 
 /* ---------- Sobre ---------- */
 .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
@@ -297,7 +310,7 @@ textarea { resize: vertical; min-height: 110px; }
 
 /* ---------- Responsivo ---------- */
 @media (max-width: 1024px) {
-  .services-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid, .reviews-grid, .prices-grid { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { grid-template-columns: 1fr 1fr; }
 }
@@ -325,7 +338,7 @@ textarea { resize: vertical; min-height: 110px; }
   .btn-nav { margin-top: 12px; }
 }
 @media (max-width: 600px) {
-  .services-grid, .reviews-grid, .gallery, .steps { grid-template-columns: 1fr; }
+  .services-grid, .reviews-grid, .prices-grid, .gallery, .steps { grid-template-columns: 1fr; }
   .field-row { grid-template-columns: 1fr; gap: 0; }
   .footer-inner { grid-template-columns: 1fr; }
   .btn { width: 100%; }

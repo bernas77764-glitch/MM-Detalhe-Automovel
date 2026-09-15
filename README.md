@@ -25,6 +25,7 @@ Edite apenas o ficheiro `js/config.js`. Todos os campos estão comentados:
 - `googleReviewUrl` — ligação direta para "Escrever avaliação"
 - `mapEmbedUrl` — para mostrar o mapa dentro do site: no Google Maps →
   **Partilhar → Incorporar um mapa** → copiar só o valor de `src="..."`
+- `precos` / `precosNota` — tabela de preços (lista vazia esconde a secção)
 - `instagram`, `facebook` — deixar `""` para esconder o ícone
 - `avaliacoes` — lista de avaliações apresentadas na secção "Avaliações"
 
