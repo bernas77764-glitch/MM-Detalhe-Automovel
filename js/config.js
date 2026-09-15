@@ -13,7 +13,7 @@ window.MM_CONFIG = {
   telefone: "932 739 365",
   whatsapp: "351932739365",
 
-  email: "geral@mmdetalheautomovel.pt",
+  email: "mmdetalhe@gmail.com",
 
   // Morada completa (aparece nos contactos e no rodapé)
   morada: "Estrada de Polima, R. Outeirinhos 171, 2785-545 São Domingos de Rana",
