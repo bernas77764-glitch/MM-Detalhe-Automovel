@@ -58,9 +58,14 @@
       const stars = "★".repeat(Math.max(0, Math.min(5, r.estrelas || 5)));
       card.innerHTML =
         '<div class="stars" aria-label="' + stars.length + ' estrelas">' + stars + "</div>" +
-        "<p></p><footer></footer>";
+        "<p></p><p class=\"review-tr\" hidden></p><footer></footer>";
       card.querySelector("p").textContent = "“" + r.texto + "”";
-      card.querySelector("footer").textContent = "— " + (r.nome || "Cliente");
+      if (r.traducao) {
+        const tr = card.querySelector(".review-tr");
+        tr.textContent = r.traducao;
+        tr.hidden = false;
+      }
+      card.querySelector("footer").textContent = "— " + (r.nome || "Cliente") + " · Google";
       reviews.appendChild(card);
     });
   }

@@ -49,21 +49,30 @@ window.MM_CONFIG = {
   instagram: "https://www.instagram.com/mmdetalheautomovel.pt",
   facebook: "",
 
-  // Avaliações apresentadas no site. Copie aqui avaliações reais do Google.
+  // Avaliações apresentadas no site (copiadas da ficha Google).
+  // "traducao" é opcional: aparece por baixo do texto original.
   avaliacoes: [
     {
-      nome: "Cliente",
-      texto: "Serviço impecável e atenção ao detalhe em tudo. O carro ficou como novo, recomendo!",
+      nome: "Victor Arefiev",
+      texto: "Atendimento espetacular e com muita atenção ao detalhe! A equipa é extremamente simpática e demonstrou um profissionalismo irrepreensível. Para além da qualidade do serviço, praticam preços muito competitivos. Recomendo vivamente!",
       estrelas: 5,
     },
     {
-      nome: "Cliente",
-      texto: "Polimento e proteção cerâmica de grande qualidade. Profissionalismo do início ao fim.",
+      nome: "Jamie Dixon",
+      texto: "INCREDIBLE!!! 5 stars! Best car detail experience I've had in Portugal! Highly recommend!!!",
+      traducao: "Incrível! 5 estrelas! A melhor experiência de detalhe automóvel que tive em Portugal. Recomendo muito!",
       estrelas: 5,
     },
     {
-      nome: "Cliente",
-      texto: "Higienização do interior fantástica, eliminou odores e manchas que já tinha dado como perdidas.",
+      nome: "Paulo Neto",
+      texto: "Bruno is super friendly and my car is looking brand new, it doesn't even look that I own a dog that is always trashing my car with fur! Super recommend it.",
+      traducao: "O Bruno é super simpático e o meu carro parece novo. Nem parece que tenho um cão que está sempre a encher o carro de pelos! Recomendo muito.",
+      estrelas: 5,
+    },
+    {
+      nome: "Hyuntae Kim",
+      texto: "It was very friendly and professional. My car has turned a new car. I will visit there again.",
+      traducao: "Atendimento muito simpático e profissional. O meu carro ficou como novo. Vou voltar.",
       estrelas: 5,
     },
   ],
