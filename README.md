@@ -25,28 +25,24 @@ Edite apenas o ficheiro `js/config.js`. Todos os campos estão comentados:
 - `googleReviewUrl` — ligação direta para "Escrever avaliação"
 - `mapEmbedUrl` — para mostrar o mapa dentro do site: no Google Maps →
   **Partilhar → Incorporar um mapa** → copiar só o valor de `src="..."`
-- `precos` / `precosNota` — tabela de preços (lista vazia esconde a secção)
+- `servicos` / `precosNota` — lista de serviços com preço, descrição e ícone
 - `instagram`, `facebook` — deixar `""` para esconder o ícone
 - `avaliacoes` — lista de avaliações apresentadas na secção "Avaliações"
 
-## Adicionar fotografias à galeria
+## Adicionar fotografias à galeria (Antes / Depois)
 
 1. Crie a pasta `assets/galeria/` e coloque lá as fotografias (JPG, idealmente
-   com 1200 px de largura ou menos).
-2. Em `index.html`, na secção `id="galeria"`, substitua cada bloco
+   com 1200 px de largura ou menos). Use um par por trabalho, por exemplo
+   `farois-antes.jpg` e `farois-depois.jpg`, tiradas do mesmo ângulo.
+2. Em `js/config.js`, acrescente cada par à lista `galeria`:
 
-   ```html
-   <figure class="gallery-item ph"><figcaption>Polimento e correção de pintura</figcaption></figure>
+   ```js
+   galeria: [
+     { titulo: "Polimento de faróis", antes: "assets/galeria/farois-antes.jpg", depois: "assets/galeria/farois-depois.jpg" },
+   ],
    ```
 
-   por
-
-   ```html
-   <figure class="gallery-item">
-     <img src="assets/galeria/polimento-1.jpg" alt="Polimento em BMW Série 3" loading="lazy" />
-     <figcaption>Polimento e correção de pintura</figcaption>
-   </figure>
-   ```
+   O site mostra cada par com um cursor deslizante para comparar o antes e o depois.
 
 ## Formulário de contacto
 
