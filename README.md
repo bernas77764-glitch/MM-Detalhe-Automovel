@@ -44,6 +44,13 @@ Edite apenas o ficheiro `js/config.js`. Todos os campos estão comentados:
 
    O site mostra cada par com um cursor deslizante para comparar o antes e o depois.
 
+## Depois de alterar CSS ou JavaScript
+
+Os browsers guardam `css/style.css`, `js/config.js` e `js/main.js` em cache.
+Para garantir que os visitantes recebem a versão nova, aumente o número
+`?v=` nas três referências no fim e no `<head>` de `index.html`
+(por exemplo `?v=3` → `?v=4`) sempre que alterar um desses ficheiros.
+
 ## Formulário de contacto
 
 O formulário não precisa de servidor: gera a mensagem e abre o **WhatsApp**
