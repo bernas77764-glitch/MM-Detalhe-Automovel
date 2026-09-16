@@ -26,6 +26,7 @@ Edite apenas o ficheiro `js/config.js`. Todos os campos estão comentados:
 - `mapEmbedUrl` — para mostrar o mapa dentro do site: no Google Maps →
   **Partilhar → Incorporar um mapa** → copiar só o valor de `src="..."`
 - `servicos` / `precosNota` — lista de serviços com preço, descrição e ícone
+- `fundoHero` — fotografia de fundo do topo (ficheiro em `assets/`, ex.: `assets/fundo.jpg`); `""` desliga
 - `instagram`, `facebook` — deixar `""` para esconder o ícone
 - `avaliacoes` — lista de avaliações apresentadas na secção "Avaliações"
 
