@@ -89,7 +89,12 @@ window.MM_CONFIG = {
   // indique aqui cada par. Com a lista vazia, a galeria mostra espaços vazios.
   // Exemplo:
   // { titulo: "Polimento de faróis", antes: "assets/galeria/farois-antes.jpg", depois: "assets/galeria/farois-depois.jpg" },
-  galeria: [],
+  galeria: [
+    { titulo: "Polimento de faróis", antes: "assets/galeria/farois-antes.jpg", depois: "assets/galeria/farois-depois.jpg" },
+    { titulo: "Higienização de estofos", antes: "assets/galeria/estofos-antes.jpg", depois: "assets/galeria/estofos-depois.jpg" },
+    { titulo: "Limpeza de jantes", antes: "assets/galeria/jantes-antes.jpg", depois: "assets/galeria/jantes-depois.jpg" },
+    { titulo: "Limpeza de carrinha comercial", antes: "assets/galeria/carrinha-antes.jpg", depois: "assets/galeria/carrinha-depois.jpg" },
+  ],
 
   // Redes sociais (deixe "" para esconder o ícone)
   instagram: "https://www.instagram.com/mmdetalheautomovel.pt",

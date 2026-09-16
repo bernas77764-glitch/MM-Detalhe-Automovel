@@ -200,6 +200,8 @@ p { margin: 0 0 1em; }
 
 /* ---------- Galeria ---------- */
 .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.gallery:has(.compare) { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.gallery-item.compare { aspect-ratio: 1 / 1; }
 .gallery-item {
   margin: 0; position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden;
   background: var(--surface); border: 1px solid var(--line);
@@ -365,7 +367,7 @@ textarea { resize: vertical; min-height: 110px; }
   .btn-nav { margin-top: 12px; }
 }
 @media (max-width: 600px) {
-  .services-grid, .gallery, .steps { grid-template-columns: 1fr; }
+  .services-grid, .gallery, .gallery:has(.compare), .steps { grid-template-columns: 1fr; }
   .field-row { grid-template-columns: 1fr; gap: 0; }
   .footer-inner { grid-template-columns: 1fr; }
   .btn { width: 100%; }
