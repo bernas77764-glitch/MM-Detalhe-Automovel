@@ -121,7 +121,7 @@ p { margin: 0 0 1em; }
    (onde está o texto) e mais leve à direita, e desvanece para o fundo em baixo. */
 .hero.has-photo .hero-bg {
   background:
-    linear-gradient(90deg, rgba(28, 28, 28, .94) 0%, rgba(28, 28, 28, .82) 45%, rgba(28, 28, 28, .45) 100%),
+    linear-gradient(90deg, rgba(28, 28, 28, .93) 0%, rgba(28, 28, 28, .72) 45%, rgba(28, 28, 28, .28) 100%),
     linear-gradient(180deg, rgba(28, 28, 28, .35) 0%, rgba(28, 28, 28, 0) 40%, var(--bg) 100%),
     var(--hero-img) center / cover no-repeat,
     var(--bg-2);
