@@ -37,13 +37,59 @@ window.MM_CONFIG = {
   // Deixe vazio ("") para mostrar apenas o botão "Abrir no Google Maps".
   mapEmbedUrl: "https://www.google.com/maps?q=MM+Detalhe+Autom%C3%B3vel,+Estrada+de+Polima,+R.+Outeirinhos+171,+2785-545+S%C3%A3o+Domingos+de+Rana&output=embed",
 
-  // Tabela de preços (secção "Preços"). Deixe a lista vazia para esconder.
-  precos: [
-    { nome: "Proteção Nano Ceramic", preco: "290 €", desc: "Revestimento cerâmico de longa duração com brilho e efeito hidrofóbico." },
-    { nome: "Polimento comercial", preco: "100 €", desc: "Polimento de uma etapa para devolver brilho e remover riscos ligeiros." },
-    { nome: "Limpeza de alcatifa", preco: "49 €", desc: "Limpeza profunda da alcatifa com extração a húmido." },
+  // Serviços e preços (secção "Serviços"). Ícones disponíveis:
+  // "lavagem", "farois", "estofos", "polimento", "colantes", "ozono", "personalizado"
+  servicos: [
+    {
+      nome: "Limpeza simples",
+      preco: "30 €",
+      desc: "Limpeza de manutenção, exterior e interior, para manter o carro sempre em dia.",
+      icone: "lavagem",
+    },
+    {
+      nome: "Polimento de faróis (par)",
+      preco: "40 €",
+      desc: "Recuperação de faróis amarelados ou baços, com durabilidade de cerca de 12 meses.",
+      icone: "farois",
+    },
+    {
+      nome: "Higienização de estofos",
+      preco: "desde 100 €",
+      desc: "Limpeza profunda dos estofos com extração a húmido, remoção de nódoas e odores.",
+      icone: "estofos",
+    },
+    {
+      nome: "Polimento de pintura",
+      preco: "desde 150 €",
+      desc: "Remoção de riscos, hologramas e oxidação. Devolve o brilho e a profundidade da cor.",
+      icone: "polimento",
+    },
+    {
+      nome: "Aplicação de colantes na pintura",
+      preco: "desde 100 €",
+      desc: "Aplicação de vinil e autocolantes na pintura, com acabamento limpo, sem bolhas nem marcas.",
+      icone: "colantes",
+    },
+    {
+      nome: "Higienização com ozono",
+      preco: "15 € a 35 €",
+      desc: "Tratamento do interior com máquina de ozono, que elimina odores, bactérias e ácaros.",
+      icone: "ozono",
+    },
+    {
+      nome: "Serviços personalizados",
+      preco: "sob orçamento",
+      desc: "Precisa de algo específico? Montamos um serviço à medida do seu carro e do que pretende.",
+      icone: "personalizado",
+    },
   ],
   precosNota: "Preços indicativos. O valor final depende do tamanho e do estado da viatura — peça o seu orçamento sem compromisso.",
+
+  // Galeria "Antes / Depois". Coloque as fotografias em assets/galeria/ e
+  // indique aqui cada par. Com a lista vazia, a galeria mostra espaços vazios.
+  // Exemplo:
+  // { titulo: "Polimento de faróis", antes: "assets/galeria/farois-antes.jpg", depois: "assets/galeria/farois-depois.jpg" },
+  galeria: [],
 
   // Redes sociais (deixe "" para esconder o ícone)
   instagram: "https://www.instagram.com/mmdetalheautomovel.pt",
