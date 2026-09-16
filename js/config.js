@@ -85,6 +85,10 @@ window.MM_CONFIG = {
   ],
   precosNota: "Preços indicativos. O valor final depende do tamanho e do estado da viatura — peça o seu orçamento sem compromisso.",
 
+  // Fotografia de fundo do topo da página (deixe "" para usar só o gradiente).
+  // Coloque o ficheiro em assets/ e indique aqui o caminho.
+  fundoHero: "assets/fundo.jpg",
+
   // Galeria "Antes / Depois". Coloque as fotografias em assets/galeria/ e
   // indique aqui cada par. Com a lista vazia, a galeria mostra espaços vazios.
   // Exemplo:

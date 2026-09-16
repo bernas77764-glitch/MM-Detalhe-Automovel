@@ -36,6 +36,17 @@
   setLink(".js-instagram-link", cfg.instagram);
   setLink(".js-facebook-link", cfg.facebook);
 
+  /* ---------- Fotografia de fundo do topo ---------- */
+  if (cfg.fundoHero) {
+    const hero = $(".hero");
+    const probe = new Image();
+    probe.onload = () => {
+      hero.style.setProperty("--hero-img", 'url("' + new URL(cfg.fundoHero, location.href).href + '")');
+      hero.classList.add("has-photo");
+    };
+    probe.src = cfg.fundoHero;
+  }
+
   /* ---------- Mapa incorporado ---------- */
   if (cfg.mapEmbedUrl) {
     const map = $("#map");
