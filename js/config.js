@@ -38,7 +38,7 @@ window.MM_CONFIG = {
   mapEmbedUrl: "https://www.google.com/maps?q=MM+Detalhe+Autom%C3%B3vel,+Estrada+de+Polima,+R.+Outeirinhos+171,+2785-545+S%C3%A3o+Domingos+de+Rana&output=embed",
 
   // Serviços e preços (secção "Serviços"). Ícones disponíveis:
-  // "lavagem", "farois", "estofos", "polimento", "colantes", "ozono", "personalizado"
+  // "lavagem", "farois", "estofos", "polimento", "selante", "ozono", "personalizado"
   servicos: [
     {
       nome: "Limpeza simples",
@@ -65,10 +65,10 @@ window.MM_CONFIG = {
       icone: "polimento",
     },
     {
-      nome: "Aplicação de colantes na pintura",
+      nome: "Aplicação de selantes na pintura",
       preco: "desde 100 €",
-      desc: "Aplicação de vinil e autocolantes na pintura, com acabamento limpo, sem bolhas nem marcas.",
-      icone: "colantes",
+      desc: "Camada protetora que sela a pintura contra água, sujidade e raios UV, com brilho e efeito hidrofóbico.",
+      icone: "selante",
     },
     {
       nome: "Higienização com ozono",
