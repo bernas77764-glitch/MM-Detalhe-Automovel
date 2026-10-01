@@ -60,11 +60,26 @@ pré-preenchido.
 
 ## Publicar (GitHub Pages)
 
-1. No GitHub, em **Settings → Pages**, escolha *Deploy from a branch*,
-   ramo `main`, pasta `/ (root)`.
-2. O site fica disponível em `https://<utilizador>.github.io/MM-Detalhe-Automovel/`.
-3. Para usar um domínio próprio (ex.: `mmdetalheautomovel.pt`), adicione-o em
-   **Settings → Pages → Custom domain** e configure o DNS conforme indicado.
+O site é publicado automaticamente a partir do ramo `main` (Settings → Pages,
+*Deploy from a branch*, ramo `main`, pasta `/ (root)`).
+
+### Domínio próprio: www.mmdetalhe.pt
+
+O ficheiro `CNAME` na raiz contém `www.mmdetalhe.pt` e diz ao GitHub Pages
+qual é o domínio do site. Não o apague. No registador do domínio, o DNS
+deve ter:
+
+| Tipo  | Nome | Valor                          |
+|-------|------|--------------------------------|
+| A     | @    | 185.199.108.153                |
+| A     | @    | 185.199.109.153                |
+| A     | @    | 185.199.110.153                |
+| A     | @    | 185.199.111.153                |
+| CNAME | www  | bernas77764-glitch.github.io   |
+
+Depois, em Settings → Pages → *Custom domain*, confirmar `www.mmdetalhe.pt`
+e ativar *Enforce HTTPS*. O endereço sem `www` (mmdetalhe.pt) redireciona
+automaticamente para o endereço com `www`.
 
 ## Ver localmente
 
