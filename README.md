@@ -5,6 +5,9 @@ Página única, sem dependências nem processo de build: HTML, CSS e JavaScript 
 
 ## Estrutura
 
+Para o contexto completo do projeto (negócio, decisões, domínio, histórico e
+como recuperar o projeto noutra conta) ver **`PROJETO.md`**.
+
 ```
 index.html      página principal
 css/style.css   estilos (paleta do logótipo: carvão, vermelho, branco)
